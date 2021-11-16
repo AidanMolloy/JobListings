@@ -8,6 +8,5 @@
     <nav>  
         <a href="/">Home</a>
         <a href="/insert_jobs.php">Post a Job</a>
-        <a href="/drop_table.php">Delete Table</a>
-        <a href="/create_table.php">Create Table</a>
+        <a href="/reset_table.php">Reset Table</a>
     </nav>
