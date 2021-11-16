@@ -14,6 +14,12 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
   
     // sql to create table
+    $sql = "DROP TABLE Jobs";
+  
+    // use exec() because no results are returned
+    $conn->exec($sql);
+    echo "Table Jobs deleted successfully";
+    // sql to create table
     $sql = "CREATE TABLE Jobs (
     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     job_title VARCHAR(50) NOT NULL,
@@ -34,5 +40,6 @@ try {
   }
   
   $conn = null;
-
+  header("Location: http://cs3204-hello-world.us-east-2.elasticbeanstalk.com/");
+  die();
 ?>
