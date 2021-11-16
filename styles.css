@@ -1,0 +1,20 @@
+body {
+    background-color: #C1DBE3;
+    color: #373737;
+}
+
+nav a, nav a:visted {
+    color: #FCE694;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+}
+
+.job {
+    border-bottom: 3px black solid;
+    padding: 30px;
+    display: flex;
+}
